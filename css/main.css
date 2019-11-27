@@ -100,6 +100,10 @@ textarea {
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
+.content-wrapper {
+  width: 90%;
+}
+
 header,
 footer {
   display: flex;
@@ -115,16 +119,26 @@ header .content-wrapper {
   flex-flow: row wrap;
 }
 
+header .header-divider {
+  width: 100%;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
+}
+
+footer .content-wrapper {
+  width: 55%;
 }
 
 footer .social-icons {
@@ -174,12 +188,20 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+}
+
 /* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h3 {
+  width: 80%;
 }
 
 /*------------- About Page -----------------*/
