@@ -429,15 +429,54 @@ aside {
     margin: 0;
   }
 
-/*Features*/  /*Stopped checking here*/
+/*Features*/
 
   .features article {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap; /*Changed this to row and it didn't change layout. Investigate more. Ask question if needed.*/
+    flex-basis: 50%;        /*Why use flex-basis in media queries and width in mobile layout?*/
   }
 
   .features .features-item-description {
-
+    width: 50%;
   }
+
+  /* Reviews */
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 50%;          /*Solution code has 49%*/
+  }
+
+  /* Footer */
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;       /*Why set margin as 100px when this is what we set to content-wrapper? This was in mobile styles as well.?*/
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;      /*Why? Didn't seem to change anything....*/
+  }
+
+  footer .copyright {    /*Why add this? Moves to the left? Added text-align property.*/
+    width: 100%;
+    text-align: center;
+  }
+
+/************* About Page **************/   /*Stopped here*/
 
 
 @media only screen and (min-width: 1200px) {
