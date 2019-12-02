@@ -476,8 +476,27 @@ aside {
     text-align: center;
   }
 
-/************* About Page **************/   /*Stopped here*/
+/************* About Page **************/     /*SK instructions -  start with the widths and margins first. Finally, add your padding and flexbox properties as needed. -- struggled with this.*/
 
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mission-content p {
+    width: 40%;
+  }
+
+  .contact-section .content-wrapper h2 {
+       width: 80%;
+   }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
