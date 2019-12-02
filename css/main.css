@@ -554,7 +554,16 @@ aside {
     width: 40%;       /*Solution code had 42%*/
   }
 
+/**************** About Page *****************/
 
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 100%;
+  }
+
+  .contact-section .content-wrapper h2 {
+    margin-bottom: 40px;
+  }
 
 }
 
