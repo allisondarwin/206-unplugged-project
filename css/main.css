@@ -99,7 +99,7 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
-     width: 90%;
+     width: 90%;    /*Why set % width here and px width in media queries?*/
      margin: 50px 0;
    }
 
@@ -514,6 +514,47 @@ aside {
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
+
+/* General Styles */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+/* Hero Area */
+
+   .hero-area h1 {
+     width: 60%;
+  }
+
+/* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+/* Features */
+
+  .features h2 {
+    width: 70%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+/* Reviews */
+
+  .reviews article div {
+    width: 40%;       /*Solution code had 42%*/
+  }
+
+
 
 }
 
