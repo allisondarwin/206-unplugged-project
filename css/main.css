@@ -498,6 +498,20 @@ aside {
     align-items: flex-start;
   }
 
+/************ FAQ Page ***************/            /****example of width used one place, and flex-basis used another place****/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    width: 40%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
 
