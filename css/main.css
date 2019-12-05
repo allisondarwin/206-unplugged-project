@@ -143,6 +143,14 @@ address {
   font-style: normal;
 }
 
+img {
+  width: 100%
+}
+
+figure {
+  margin: 0;
+}
+
 .content-wrapper {
      width: 90%;    /*Why set % width here and px width in media queries?*/
      margin: 50px 0;
@@ -170,6 +178,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .header-divider {
@@ -242,10 +258,14 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero-img.jpg') center no-repeat #333; /*This is shorthand for background-position, background-repeat, and background-color. Set color in case img doesn't load.*/
+  background-size: cover;  /*This could be combineded with shorthand, but SK advised that it be seperate to avoid issues.*/
+  min-height: 500px;
 }
 
 .hero-area h1 {
   font-size: 2.75em;
+  margin: 0;          /*added, not in solution code*/
 }
 
 /* Aside */
@@ -289,7 +309,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #202322;
+  background: url('../img/features-background.jpg') center no-repeat #333; /*This is shorthand for background-position, background-repeat, and background-color. Set color in case img doesn't load.*/
+  background-size: cover;  /*This could be combineded with shorthand, but SK advised that it be seperate to avoid issues.*/
 }
 
 .features h2 {
@@ -331,6 +352,14 @@ input[type=button] {
   width: 55%; /*55% because parent container is 90%, or 324px*/
   margin: 20px 0;
 }
+
+/*.reviews figure {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}*/
 
 /*------------- About Page -----------------*/
 
@@ -487,6 +516,16 @@ input[type=button] {
   margin: 100px 0;
 }
 
+h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+}
+
 /* Header */
 
    header {
@@ -498,20 +537,29 @@ input[type=button] {
      width: 100%;
    }
 
+   header figure {
+     width: 30%;
+   }
+
    header nav {
       width: 20%;
-     }
+   }
 
-    header nav ul {
-      list-style-type: none;
-      justify-content: space-between;
-    }
+   header nav ul {
+    justify-content: space-between;
+   }
 
-    .header-divider {
+   .header-divider {
          display: none;
-    }
+   }
 
 /* Hero Area */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
 /* Aside */
 
@@ -529,6 +577,10 @@ input[type=button] {
   }
 
 /*Features*/
+
+  .features h2 {
+    margin: 0 20px 20px 0;
+  }
 
   .features article {
     display: flex;
@@ -549,8 +601,18 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 90%;
+  }
+
+  .reviews article figure,
   .reviews article div {
-    width: 50%;          /*Solution code has 49%*/
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /* Footer */
@@ -560,19 +622,29 @@ input[type=button] {
     margin: 100px 0;       /*Why set margin as 100px when this is what we set to content-wrapper? This was in mobile styles as well.?*/
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;      /*Why? Didn't seem to change anything....*/
   }
 
-  footer .copyright {    /*Why add this? Moves to the left? Added text-align property.*/
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+      line-height: 1.285;
+  }
+
+  footer .copyright {
     width: 100%;
-    text-align: center;
   }
 
 /************* About Page **************/     /*SK instructions -  start with the widths and margins first. Finally, add your padding and flexbox properties as needed. -- struggled with this.*/
@@ -588,13 +660,17 @@ input[type=button] {
   }
 
   .contact-section .content-wrapper h2 {
-       width: 80%;
+    width: 80%;
    }
 
   .contact-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .contact-content h4 {
+    font-size: 1.5em;
   }
 
 /************ FAQ Page ***************/            /****example of width used one place, and flex-basis used another place****/
@@ -604,12 +680,20 @@ input[type=button] {
   }
 
   .faq-content {
-    width: 40%;
+    flex-basis: 40%;
   }
 
   .faq h2 {
     width: 100%;
   }
+
+  .faq h4,
+  .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+  }
+
+}
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
@@ -620,9 +704,24 @@ input[type=button] {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
 /* Hero Area */
 
    .hero-area h1 {
+     font-size: 3.75em;
      width: 60%;
   }
 
@@ -635,6 +734,10 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
 /* Features */
@@ -650,7 +753,7 @@ input[type=button] {
 /* Reviews */
 
   .reviews article div {
-    width: 40%;       /*Solution code had 42%*/
+    width: 42%;
   }
 
 /**************** About Page *****************/
@@ -658,20 +761,32 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 100%;
+      font-size: 3em;
   }
 
   .contact-section .content-wrapper h2 {
     margin-bottom: 40px;
   }
 
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
 /*************** FAQ Page ********************/
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq-content {
     flex-basis: 35%;
+  }
+
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 
 }
