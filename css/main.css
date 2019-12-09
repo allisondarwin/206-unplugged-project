@@ -681,6 +681,10 @@ h3 {
     font-size: 1.5em;
   }
 
+  .map figure {
+    padding-bottom: 45%;
+  }
+
 /************ FAQ Page ***************/            /****example of width used one place, and flex-basis used another place****/
 
   .faq .content-wrapper {
@@ -779,6 +783,10 @@ h3 {
   .contact-content h4 {
     font-size: 1.875em;
   }
+
+.map figure {
+  padding-bottom: 38%;
+}
 
 /*************** FAQ Page ********************/
 
