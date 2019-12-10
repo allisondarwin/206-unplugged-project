@@ -598,6 +598,11 @@ h3 {
     flex-basis: 50%;        /*Why use flex-basis in media queries and width in mobile layout?*/
   }
 
+  .features i {
+	  font-size: 3.75em;
+    margin-bottom: 40px;
+  }
+
   .features .features-item-description {
     width: 50%;
   }
