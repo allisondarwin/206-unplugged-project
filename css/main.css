@@ -1,3 +1,25 @@
+//////*STATUS - started refining CSS. Header/nav remaining - text for faq/about. Seems too bold. Home page remaining - h1 in hero-area text and spacing above. Hero image is different. Font awesome icons adjusting size for mobile.*/
+
+/***********NOTES on Progress (continued)
+
+- Still on homepage. Completed mobile, except notes above. Font awesome icons - set size in mobile css??
+- Started tablet and got through aside. Stopped in features - update icon size and margin? Also note space between features/reviews needs to be changed.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -169,7 +191,7 @@ footer {
 }
 
 header {
-  padding: 15px 0;
+  padding: 15px 0 20px 0;
 }
 
 header .content-wrapper {
@@ -210,6 +232,8 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
+  padding: 0 15px;
 }
 
 header nav ul li {
@@ -234,6 +258,10 @@ footer .contact {
   margin-bottom: 50px;
 }
 
+footer .contact h4 {
+  margin-top: 0;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -255,7 +283,7 @@ footer .social-icons p i {
 }
 
 footer .copyright {
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -272,8 +300,9 @@ footer .copyright {
 }
 
 .hero-area h1 {
-  font-size: 2.75em;
-  margin: 0;          /*added, not in solution code*/
+  font-size: 2.25em;
+  margin: 0;
+  font-weight: 400;
 }
 
 /* Aside */
@@ -286,8 +315,20 @@ aside {
   background: #527158;
 }
 
-aside .form {
+aside .content-wrapper {
   margin-top: 30px;
+}
+
+aside .form-description h3, p {
+  margin: 0;
+}
+
+aside .form {
+  margin-top: 35px;
+}
+
+aside .form h3 {
+  margin-bottom: 10px;
 }
 
 input[type=text] {
@@ -295,6 +336,10 @@ input[type=text] {
   width: 100%;
   color: #2a423a;
   font-style: italic;
+  height: 50px;
+  padding-left: 15px;
+  color: #bfbfbf;
+  font-family: 'Open Sans';
 }
 
 input[type=button] {
@@ -322,7 +367,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin-bottom: 60px;
+  margin: 0 0 60px;
 }
 
 .features article {
@@ -352,7 +397,7 @@ input[type=button] {
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin: 0 0 30px;
   line-height: 1;
 }
 
@@ -563,6 +608,11 @@ h3 {
 
    header nav ul {
     justify-content: space-between;
+    padding: 0;
+   }
+
+   header nav ul li {
+     font-size: 1em;
    }
 
    .header-divider {
@@ -586,10 +636,28 @@ h3 {
     flex-flow: row wrap;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 35%;
+  aside .content-wrapper .form-description {
+    width: 40%;
     margin: 0;
+  }
+
+  aside .content-wrapper .form {
+    width: 45%;
+    margin: 0;
+  }
+
+  aside .content-wrapper h3 {
+    margin: 0 0 20px;
+  }
+
+  input[type=text] {
+    height: 40px;
+    font-size: 0.875em;
+    background: #e2e3ed;
+  }
+
+  input[type=button] {
+    padding: 10px 0;
   }
 
 /*Features*/
