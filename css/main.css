@@ -1,9 +1,11 @@
-//////*STATUS - started refining CSS. Header/nav remaining - text for faq/about. Seems too bold. Home page remaining - h1 in hero-area text and spacing above. Hero image is different. Font awesome icons adjusting size for mobile.*/
+ /***********NOTES on Progress
 
-/***********NOTES on Progress (continued)
+- Still on homepage. Completed mobile and tablet.
 
-- Still on homepage. Completed mobile, except notes above. Font awesome icons - set size in mobile css??
-- Started tablet and got through aside. Stopped in features - update icon size and margin? Also note space between features/reviews needs to be changed.*/
+Outstanding - header/nav: text for FAQ/About, hero-image: can I zoom?
+            - tablet --> features - need 40px between h2 and first icon, but don't want to change 30px on article.
+
+*/
 
 
 
@@ -367,7 +369,7 @@ input[type=button] {
 }
 
 .features h2 {
-  margin: 0 0 60px;
+  margin: 0 0 30px;
 }
 
 .features article {
@@ -380,6 +382,11 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -591,6 +598,7 @@ h3 {
 
    header {
     justify-content: space-around; /*Why change from center to space-around when only chold element is content-wrapper?*/
+    padding: 40px 0;
    }
 
    header .content-wrapper {
@@ -599,7 +607,8 @@ h3 {
    }
 
    header figure {
-     width: 30%;
+     width: 35%;
+     justify-content: flex-start;
    }
 
    header nav {
@@ -663,20 +672,20 @@ h3 {
 /*Features*/
 
   .features h2 {
-    margin: 0 20px 20px 0;
+    margin: 0;
   }
 
   .features article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column wrap; /*Changed this to row and it didn't change layout. Investigate more. Ask question if needed.*/
-    flex-basis: 50%;        /*Why use flex-basis in media queries and width in mobile layout?*/
+    flex-flow: column wrap;
+    flex-basis: 50%;
   }
 
   .features i {
-	  font-size: 3.75em;
-    margin-bottom: 40px;
+    font-size: 5em;
+    margin-bottom: 30px;
   }
 
   .features .features-item-description {
@@ -691,6 +700,7 @@ h3 {
   }
 
   .reviews h2 {
+    margin: 0 0 20px;
     width: 90%;
   }
 
@@ -701,7 +711,7 @@ h3 {
 
   .reviews h3 {
     width: 75%;
-    margin: 0;
+    margin: 0 0 15px;
   }
 
   /* Footer */
