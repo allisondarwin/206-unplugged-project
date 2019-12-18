@@ -1,10 +1,10 @@
  /***********NOTES on Progress
 
-- Still on homepage. Completed mobile and tablet.
+- Still on homepage -->desktop. Completed header/hero-area/aside. Pick-up with features.
 
-Outstanding - header/nav: text for FAQ/About, hero-image: can I zoom?
+Outstanding - header/nav: text for FAQ/About, hero-image: can I zoom? - see slack
             - tablet --> features - need 40px between h2 and first icon, but don't want to change 30px on article.
-
+            - mobile - fix spacing above h2 in hero-area.
 */
 
 
@@ -598,7 +598,7 @@ h3 {
 
    header {
     justify-content: space-around; /*Why change from center to space-around when only chold element is content-wrapper?*/
-    padding: 40px 0;
+    padding: 30px 0;
    }
 
    header .content-wrapper {
@@ -629,11 +629,18 @@ h3 {
    }
 
 /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area .content-wrapper {
+    margin: 0;
+  }
 
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
-    margin: 0;
+    margin: 75px 0 0;
   }
 
 /* Aside */
@@ -826,11 +833,27 @@ h3 {
       line-height: 1.333;
   }
 
+/* Header */
+
+header {
+  padding: 25px 0;
+}
+
+header figure img {
+  width: 285px;
+  height: 50px;
+}
+
+header nav ul {
+  justify-content: space-around;
+}
+
 /* Hero Area */
 
    .hero-area h1 {
      font-size: 3.75em;
-     width: 60%;
+     width: 68%;
+     margin: 23px 0 0;
   }
 
 /* Aside */
@@ -841,11 +864,20 @@ h3 {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 30%;
+    width: 33.34%;
   }
 
   .form-description p {
     font-size: 1.125em;
+  }
+
+  input[type=text] {
+    height: 50px;
+    font-size: 1.125em;
+  }
+
+  input[type=button] {
+    font-size: 1.5em;
   }
 
 /* Features */
