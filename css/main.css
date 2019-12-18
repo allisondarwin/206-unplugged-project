@@ -1,9 +1,9 @@
  /***********NOTES on Progress
 
-- Still on homepage -->desktop. Completed header/hero-area/aside. Pick-up with features.
+- Still on homepage -->desktop. See note below. 
 
-Outstanding - header/nav: text for FAQ/About, hero-image: can I zoom? - see slack
-            - tablet --> features - need 40px between h2 and first icon, but don't want to change 30px on article.
+Outstanding - Background image on homepage - see slack. (This should be last thing on HP.)
+            - header/nav: text for FAQ/About (?)
             - mobile - fix spacing above h2 in hero-area.
 */
 
@@ -679,7 +679,7 @@ h3 {
 /*Features*/
 
   .features h2 {
-    margin: 0;
+    margin: 0 0 10px;
   }
 
   .features article {
@@ -708,7 +708,7 @@ h3 {
 
   .reviews h2 {
     margin: 0 0 20px;
-    width: 90%;
+    width: 80%;
   }
 
   .reviews article figure,
@@ -883,17 +883,26 @@ header nav ul {
 /* Features */
 
   .features h2 {
-    width: 70%;
+    margin: 0 0 70px;
+    width: 100%;
   }
 
   .features article {
     flex-basis: 33%;
   }
 
+  .features .features-item-description {
+    width: 61%;
+  }
+
 /* Reviews */
 
   .reviews article div {
-    width: 42%;
+    width: 45%;
+  }
+
+  .reviews h2 {
+    margin: 0 0 100px;
   }
 
 /**************** About Page *****************/
