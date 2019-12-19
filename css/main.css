@@ -285,7 +285,7 @@ footer .social-icons p i {
 }
 
 footer .copyright {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -783,7 +783,8 @@ h3 {
   }
 
   .mission-content p {
-    width: 40%;
+    margin: 40px 0 0;
+    width: 47%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -796,12 +797,14 @@ h3 {
     align-items: flex-start;
   }
 
-  .contact-content h4 {
+  .contact-content .general-contact h4,
+  .contact-content .facilitator-contact h4 {
     font-size: 1.5em;
+    margin: 50px 0 20px;
   }
 
   .map figure {
-    padding-bottom: 45%;
+    padding-bottom: 46%;
   }
 
 /************ FAQ Page ***************/            /****example of width used one place, and flex-basis used another place****/
