@@ -928,7 +928,7 @@ header nav ul {
 
   .mission h2,
   .contact-section .content-wrapper h2 {
-      width: 100%;
+      width: 95%;
       font-size: 3em;
   }
 
@@ -936,8 +936,14 @@ header nav ul {
     margin-bottom: 40px;
   }
 
-  .contact-content h4 {
+  .contact-content {
+    width: 88%;
+  }
+
+  .contact-content .general-contact h4,
+  .contact-content .facilitator-contact h4 {
     font-size: 1.875em;
+    margin: 0 0 40px;
   }
 
 .map figure {
