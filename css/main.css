@@ -488,7 +488,7 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
   line-height: 1;
 }
 
@@ -498,7 +498,12 @@ input[type=button] {
 
 .faq-content h4 {
   line-height: 1.333;
-  font-weight: 700;
+  font-weight: 500;
+  margin: 0;
+}
+
+.faq-content p {
+  margin: 15px 0 0;
 }
 
 /* ==========================================================================
@@ -758,7 +763,7 @@ h3 {
 
   footer h4 {
     font-size: 1.5em;
-    margin-bottom: 40px;
+    margin: 0 0 40px;
   }
 
   footer p {
@@ -810,11 +815,13 @@ h3 {
 /************ FAQ Page ***************/            /****example of width used one place, and flex-basis used another place****/
 
   .faq .content-wrapper {
+    align-items: flex-start;
     justify-content: space-between;
+    margin: 100px 0 50px 0;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -958,7 +965,7 @@ header nav ul {
   }
 
   .faq-content {
-    flex-basis: 35%;
+    flex-basis: 45%;
   }
 
   .faq h4,
