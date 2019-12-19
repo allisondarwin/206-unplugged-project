@@ -1,6 +1,6 @@
  /***********NOTES on Progress
 
-- Still on homepage -->desktop. See note below. 
+- Still on homepage -->desktop. See note below.
 
 Outstanding - Background image on homepage - see slack. (This should be last thing on HP.)
             - header/nav: text for FAQ/About (?)
@@ -423,10 +423,18 @@ input[type=button] {
   background: #527158;
 }
 
+.mission h2 {
+  margin: 0;
+}
+
+.mission-content p {
+  margin: 20px 0 0;
+}
+
 .map figure {
   width: 100%;
   height: 0;
-  padding-bottom: 75%;    /*Get % by dividing height/width found in iframe code for rectangle. For square, would use 100%. Keeps height/width ratio relative.*/
+  padding-bottom: 120%;    /*Get % by dividing height/width found in iframe code for rectangle. For square, would use 100%. Keeps height/width ratio relative.*/
   overflow: hidden;
   position: relative;
 }
@@ -445,6 +453,14 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
   background: #2a423a;
+}
+
+.contact-section h2 {
+  margin: 0;
+}
+
+.contact-content .general-contact h4 {
+  margin: 10px 0 15px;
 }
 
 .contact-content p {
